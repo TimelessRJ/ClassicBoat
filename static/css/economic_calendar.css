@@ -1,0 +1,11 @@
+h1 {
+   text-align: center;
+}
+
+#newsvid {
+   position: absolute;
+   margin: auto;
+   top: 25%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}

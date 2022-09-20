@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CryptoCypher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link rel="shortcut icon" href="{{url_for('static', filename='img/favicon.ico')}}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='img/favicon/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='img/favicon/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='img/favicon/favicon-16x16.png')}}">
+    
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/boilerlate.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/normalize.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/economic_calendar.css')}}">
+        
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="{{url_for('index')}}" id="navbar__logo">
+                <img id="cclogo" src="{{url_for('static', filename='img/apple-touch-icon.png')}}">
+            </a>
+
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="{{url_for('index')}}" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="{{url_for('economic_calendar')}}" class="navbar__links">Economic Calendar</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/" class="button">Daily Reports</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>Hello There, no News Here</h1>
+
+    <iframe id="newsvid" width="560" height="315" src="https://www.youtube-nocookie.com/embed/-GwDF501j0I?controls=0&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <script src="{{url_for('static', filename='js/modernizr-3.11.2.min.js')}}"></script>
+
+</body>
+
+</html>
